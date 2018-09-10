@@ -3,9 +3,8 @@ layout: page
 css: ["index.css"]
 ---
 
-
 <div class="row">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
   <div class="col s12">
     <div class="card hoverable">
       <div class="card-content">
@@ -24,5 +23,4 @@ css: ["index.css"]
     </div>
   </div>
   {% endfor %}
-  <a href="{{site.baseurl}}/news">More news</a>
 </div>
